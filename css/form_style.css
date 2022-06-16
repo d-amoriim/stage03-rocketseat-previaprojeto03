@@ -1,0 +1,100 @@
+.form_legend_text {
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: 'Archivo', sans-serif;
+
+    line-height: 3.4rem;
+    color: var(--preto-secundario);
+}
+
+.form_label {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    font-weight: 400;
+    font-size: 1.4rem;
+
+    line-height: 2.4rem;
+    margin: 0 0 0.8rem 0;
+    color: var(--preto-principal);
+}
+
+.form_span_text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    color: var(--cinza-principal);
+}
+
+.form_space_border {
+    border-bottom: 0.1rem solid var(--cor-borda);
+    margin: 1.6rem 0 2.4rem 0;
+}
+
+.form_input {
+    background: transparent;
+
+    border: 0.1rem solid var(--cor-borda);
+    border-radius: 0.8rem;
+    height: 5.6rem;
+    padding: 0 2.0rem 0;
+    margin: 0 0 2.4rem 0;
+}
+
+.form_input_text {
+    background: transparent;
+
+    border: 0.1rem solid var(--cor-borda);
+    border-radius: 0.8rem;
+    height: 17rem;
+    max-height: 25rem;
+    padding: 2rem;
+    margin: 0 0 2.4rem 0;
+    max-width: 605px;
+}
+
+.form_select_item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+
+    color: var(--cinza-principal);
+}
+
+.form_input_checkbox {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.form_input_text:focus {
+    outline: none;
+}
+
+.form_input:focus {
+    outline: 0;
+}
+
+
+
+/* BOTAO */
+
+.form_button {
+    width: 100%;
+    background: var(--verde);
+
+    font-family: 'Archivo';
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--branco);
+
+    padding: 1.5rem 4rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    
+    transition: .3s;
+}
+.form_button:hover {
+    transform: scale(1.01);
+}

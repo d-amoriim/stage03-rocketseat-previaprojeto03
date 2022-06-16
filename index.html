@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Projeto 03</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form_style.css">
+</head>
+
+<body>
+    <header class="wrapper_header">
+        <div class="space_box">
+            <section class="header_section_text">
+                <h1>Crie e compartilhe seu evento.</h1>
+                <p>O primeiro passo, é preencher esse
+                    formulário de inscrição.</p>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="space_box">
+            <form class="main_div_form">
+
+                <!--Container INFORMAÇÕES-->
+                <fieldset class="form_container">
+
+                    <legend class="form_legend_text">Informações do Evento</legend>
+                    <span class="form_space_border"></span>
+
+                    <!--Titulo evento-->
+                    <label class="form_label" for="email">Título do evento
+                        <span class="form_span_text">
+                            (digite um email válido)
+                        </span>
+                    </label>
+                    <input class="form_input" id="email" type="email" required>
+
+                    <!--Link evento-->
+                    <label class="form_label" for="link_evento">Link do evento
+                        <span class="form_span_text">
+                            (comece com https://)
+                        </span>
+                    </label>
+                    <input class="form_input" id="link_evento" type="url" required>
+
+                    <!--Whatsapp para contato-->
+                    <label class="form_label" for="whatsapp">Whatsapp para contato
+                        <span class="form_span_text">
+                            (somente números)
+                        </span>
+                    </label>
+                    <input class="form_input" id="whatsapp" type="number" required>
+
+                    <!--Informações extras-->
+                    <label class="form_label" for="inf_extras">Informações extras</label>
+                    <textarea class="form_input_text" id="inf_extras" cols="30" rows="10"></textarea>
+
+                    <!--Categoria-->
+                    <label class="form_label">Categoria</label>
+                    <select class="form_input form_select_item">
+                        <option value="0">Tipo do Evento</option>
+                        <option value="1">#</option>
+                        <option value="2">#</option>
+                        <option value="3">#</option>
+                    </select>
+                </fieldset>
+
+                <!--Container PRIVACIDADE-->
+                <fieldset class="form_container">
+                    <legend class="form_legend_text">Privacidade</legend>
+                    <span class="form_space_border"></span>
+
+                    <!--Email do adiminstrador-->
+                    <label class="form_label" for="email_adm">E-mail do administrador
+                        <span class="form_span_text">
+                            (digite um email válido)
+                        </span>
+                    </label>
+                    <input class="form_input" id="email_adm" type="email" required>
+
+                    <!--Senha de acesso para participantes-->
+                    <label class="form_label" for="senha_participantes">Senha de acesso para os participantes
+                        <span class="form_span_text">
+                            (mínimo 8 caracteres)
+                        </span>
+                    </label>
+                    <input class="form_input" id="senha_participantes" maxlength="24" minlength="10" type="password" required>
+                    <label class="form_label"><input class="form_input_checkbox" type="checkbox" checked>Evento
+                        privado</label>
+                </fieldset>
+
+                <!--Container AGENDAMENTO DIA/HORA-->
+                <fieldset class="form_container">
+                    <legend class="form_legend_text">Dia e Hora</legend>
+                    <span class="form_space_border"></span>
+
+                    <!--Container seções data/hora-->
+                    <section class="scheduling_container">
+                        <div class="section_scheduling_form">
+                            <label class="form_label" for="data">Data</label>
+                            <input class="form_input" id="data" type="date">
+                        </div>
+                        <div class="section_scheduling_form">
+                            <label class="form_label" for="das">Das</label>
+                            <input class="form_input" id="das" type="time">
+                        </div>
+                        <div class="section_scheduling_form">
+                            <label class="form_label" for="ate">Até</label>
+                            <input class="form_input" id="ate" type="time">
+                        </div>
+                    </section>
+                </fieldset>
+            </form>
+            <div class="space_box_button">
+                <button class="form_button">Salvar evento</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
